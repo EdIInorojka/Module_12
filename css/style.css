@@ -91,7 +91,6 @@ img {
 }
 
 body {
-    width: 1920px;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -108,7 +107,6 @@ body {
 /* <----------Header----------> */
 
 .header{
-    width: 1920px;
     height: 100px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -137,17 +135,6 @@ body {
     background: none;
     border: none;
     margin: 0;
-    position: relative;
-}
-
-
-.header-button a::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     outline: 2px solid transparent;
 }
 
@@ -163,7 +150,7 @@ body {
     stroke: var(--hover-focus_color);
 }
 
-.header-button a:focus::before{
+.header-button:focus{
     outline-color: var(--hover-focus_color);
 }
 
@@ -312,7 +299,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 32px;
     color: #333333;
     margin-bottom: 50px;
     min-height: 192px;
@@ -326,13 +313,12 @@ body {
 }
 
 .about-div_left{
-    width: 868px;
-    min-height: 622px;
+    max-width: 868px;
     background-image: url("../img/Rectangle\ 2.jpg");
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
-    align-self: flex-end;
 }
 
 .div-div_bottom{
@@ -453,11 +439,17 @@ body {
 
 .work-content{
     display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.work-container{
+    display: flex;
     gap: 142px;
 }
 
 .content-div{
-    min-height: 646px;
+    min-height: 470px;
 }
 
 .work-h2{
@@ -475,39 +467,32 @@ body {
     gap: 85px;
     padding-left: 0;
     list-style-type: none;
-    margin-bottom: 45px;
 }
 
 .work-li{
     padding-left: 0;
-    position: relative;
-    transition: color .3s;
+    background-color: transparent;
 }
 
-.work-li a::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.work-li a{
+.work-li button{
     outline: 2px solid transparent;
     outline-offset: 5px;
+    background-color: transparent;
+    border: none;
+    transition: color .3s;
+    padding: 0;
 }
 
-.work-li:hover{
+.work-li button:hover{
     color: var(--hover-focus_color);
 }
 
-.work-li a:focus{
+.work-li button:focus{
     outline-color: var(--hover-focus_color);
     transition: outline-color .3s;
 }
 
-.work-li:active{
+.work-li button:active{
     color: var(--active_color);
     transition: color .3s;
 }
@@ -624,9 +609,13 @@ body {
 }
 
 .content-div__right{
-    display: flex;
-    align-self: flex-end;
     max-width: 870px;
+}
+
+.work-img{
+    height: 100%;
+    width: 100%;
+    margin-top: auto;
 }
 
 .questions{
@@ -738,21 +727,9 @@ body {
     vertical-align: middle;
 }
 
-.questions-button a::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
-
 /* <---------Footer----------> */
 
 .footer{
-    width: 1920px;
     min-height: 594px;
     background-color: #222222;
     padding: 50px 75px 50px 74px;
