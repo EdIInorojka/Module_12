@@ -579,7 +579,7 @@ body {
     background: none;
     outline: 1px solid #333333;
     position: relative;
-    transition: background-color .3s, color .3s;
+    transition: background-color .3s, color .3s, outline-color .3s;
 }
 
 .work-button__2 a::before{
@@ -594,6 +594,7 @@ body {
 .work-button__2:hover{
     color: #FFFFFF;
     background-color: var(--hover-focus_gray);
+    outline-color: var(--hover-focus_gray);
 }
 
 .work-button__2:focus{
@@ -616,6 +617,7 @@ body {
     height: 100%;
     width: 100%;
     margin-top: auto;
+    object-fit: cover;
 }
 
 .questions{
