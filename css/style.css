@@ -855,6 +855,7 @@ body {
     line-height: 32px;
     color: #CACACA;
     vertical-align: top;
+    resize: none;
 }
 
 .footer-input{
