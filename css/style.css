@@ -118,6 +118,16 @@ body {
     padding: 13px;
 }
 
+.header-button_menu{
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.burger{
+    display: none;
+}
+
 .header-nav{
     margin-left: auto;
     margin-right: 85px;
@@ -211,6 +221,7 @@ body {
     background-image: url("../img/low-angle-photo-of-balconies-2462015\ 1.jpg");
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
 }
 
@@ -309,11 +320,12 @@ body {
     display: flex;
     gap: 32px;
     min-height: 622px;
-    display: flex;
+    flex-wrap: wrap;
 }
 
 .about-div_left{
     max-width: 868px;
+    min-height: 622px;
     background-image: url("../img/Rectangle\ 2.jpg");
     background-position: center;
     background-size: cover;
@@ -738,15 +750,16 @@ body {
 }
 
 .footer-div{
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .footer-div__first{
     display: flex;
     flex-direction: column;
     width: 252px;
-    margin-right: 350px;
+
 }
 
 .footer-logo{
@@ -828,7 +841,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 570px;
-    margin-right: 236px;
 }
 
 .footer-h2{
