@@ -320,7 +320,7 @@ body {
     display: flex;
     gap: 32px;
     min-height: 622px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .about-div_left{
@@ -404,12 +404,10 @@ body {
 .about-div_right{
     display: flex;
     flex-grow: 1;
-    width: calc((100%-132px)/2);
-    max-width: 870px;
+    max-width: calc((100%-132px)/2);
     min-height: 622px;
     flex-direction: column;
     gap: 32px;
-    width: 870px;
 }
 
 .div-top_right{
@@ -421,6 +419,7 @@ body {
     gap: 50px;
     outline: 1px solid #CACACA;
     font: 0;
+    padding-right: 10px;
 }
 
 .about-element__div{
