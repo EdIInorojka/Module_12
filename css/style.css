@@ -416,9 +416,10 @@ body {
     width: 100%;
     min-height: 295px;
     display: flex;
+    align-items: center;
+    padding-left: 60px;
     gap: 50px;
     outline: 1px solid #CACACA;
-    padding: 65px 118px 65px 60px;
     font: 0;
 }
 
