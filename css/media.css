@@ -283,7 +283,9 @@
 
 @media(max-width: 570px){
     .container{
-        max-width: 290px;
+        padding: 0;
+        width: 290px;
+        margin: auto;
     }
 
     .projects{
@@ -465,7 +467,6 @@
     }
 
     .work-div{
-        max-width: calc((100%-50px)/2);
         min-height: 320px;
         margin-bottom: 0;
     }
