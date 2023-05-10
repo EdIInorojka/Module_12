@@ -324,6 +324,7 @@ body {
 }
 
 .about-div_left{
+    width: calc((100%-134px)/2);
     max-width: 868px;
     min-height: 622px;
     background-image: url("../img/Rectangle\ 2.jpg");
@@ -402,6 +403,8 @@ body {
 
 .about-div_right{
     display: flex;
+    flex-grow: 1;
+    width: calc((100%-132px)/2);
     max-width: 870px;
     min-height: 622px;
     flex-direction: column;
@@ -410,7 +413,7 @@ body {
 }
 
 .div-top_right{
-    max-width: 870px;
+    width: 100%;
     min-height: 295px;
     display: flex;
     gap: 50px;
@@ -450,6 +453,11 @@ body {
     color: #333333;
     max-width: 450px;
     min-height: 128px;
+}
+
+.div-img_right{
+    max-width: 190px;
+    max-height: 165px;
 }
 
 .work{
