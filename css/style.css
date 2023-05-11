@@ -325,7 +325,6 @@ body {
 
 .about-div_left{
     width: calc((100%-134px)/2);
-    max-width: 868px;
     min-height: 622px;
     background-image: url("../img/Rectangle\ 2.jpg");
     background-position: center;
@@ -359,6 +358,7 @@ body {
     font-size: 16px;
     line-height: 32px;
     color: #FFFFFF;
+    margin-right: 20px;
 }
 
 .div-button_bottom{
@@ -404,13 +404,13 @@ body {
 .about-div_right{
     display: flex;
     flex-grow: 1;
-    max-width: calc((100%-132px)/2);
     min-height: 622px;
     flex-direction: column;
     gap: 32px;
 }
 
 .div-top_right{
+    justify-content: space-evenly;
     width: 100%;
     min-height: 295px;
     display: flex;
@@ -418,8 +418,7 @@ body {
     padding-left: 60px;
     gap: 50px;
     outline: 1px solid #CACACA;
-    font: 0;
-    padding-right: 10px;
+    padding: 50px 30px 50px 50px;
 }
 
 .about-element__div{
@@ -452,7 +451,7 @@ body {
     line-height: 32px;
     color: #333333;
     max-width: 450px;
-    min-height: 128px;
+    min-height: auto;
 }
 
 .div-img_right{

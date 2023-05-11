@@ -1,7 +1,4 @@
 @media(max-width: 1324px){
-    .container{
-        max-width: 924px;
-    }
 
     .header-div{
         justify-content: space-between;
@@ -71,11 +68,6 @@
         flex-direction: column;
         gap: 32px;
     }
-
-    .about-div_left{
-        max-width: 868px;
-    }
-
     .about-div_right{
         width: 100%;
     }
@@ -86,7 +78,7 @@
     }
 
     .div-top_right{
-        max-width: 100%;
+        width: 100%;
         min-height: 295px;
         padding-left: 77px;
 
@@ -98,10 +90,15 @@
 
     .work-container{
         gap: 50px;
+        justify-content: space-between;
     }
 
     .content-div{
         width: 437px;
+    }
+
+    .work-p{
+        width: 100%;
     }
 
     .work-p:last-child{
@@ -109,11 +106,15 @@
     }
 
     .work-img{
-        width: 437px;
+        width: 100%;
     }
 
     .questions-p{
         font-size: 20px;
+    }
+
+    .footer-div{
+        justify-content: space-evenly;
     }
 
     .footer-div__third{
@@ -139,7 +140,6 @@
 
 @media(max-width: 924px){
     .container{
-        max-width: 668px;
         padding: 0 15px;
     }
 
@@ -152,7 +152,7 @@
     }
 
     .about{
-        margin-bottom: 137px;
+        margin-bottom: 80px;
     }
 
     .questions{
@@ -180,10 +180,6 @@
         min-height: 122px;
     }
 
-    .about-div_left{
-        max-width: 668px;
-    }
-
     .div-p_bottom{
         font-size: 16px;
         line-height: 32px;
@@ -203,11 +199,12 @@
     .div-top_right{
         padding: 35px 40px;
         min-height: 235px;
-        max-width: 668px;
         gap: 16px;
+        align-items: center;
     }
 
     .about-div_right{
+        max-width: 100%;
         min-height: 502px;
     }
 
@@ -234,12 +231,10 @@
 
     .work-ul{
         justify-content: space-between;
-        max-width: 668px;
     }
 
     .work-container{
         flex-direction: column-reverse;
-        max-width: 668px;
     }
 
     .content-div{
@@ -247,14 +242,13 @@
     }
 
     .content-div__right{
-        max-width: 668px;
-        height: 284px;
+        min-height: 284px;
         margin-bottom: 16px;
+        max-width: 100%;
     }
 
     .work-img{
         width: 100%;
-        max-width: 668px;
     }
 
     .work-p{
@@ -284,8 +278,7 @@
 
 @media(max-width: 570px){
     .container{
-        padding: 0;
-        width: 290px;
+        padding: 0 15px;
         margin: auto;
     }
 
@@ -343,8 +336,6 @@
     }
 
     .about-p{
-        width: 290px;
-        min-height: 678px;
         font-size: 14px;
         line-height: 28px;
         margin-bottom: 8px;
@@ -361,8 +352,6 @@
 
     .about-img__left{
         display: block;
-        width: 290px;
-        height: 200px;
     }
 
     .div-div_bottom{
@@ -371,16 +360,16 @@
         background: #FFF;
         padding: 0;
         align-self: flex-start;
-        width: 290px;
     }
 
     .div-p_bottom{
         margin: 0;
         font-weight: 400;
-        width: 290px;
         font-size: 14px;
         line-height: 28px;
         color: #333333;
+        max-width: 100%;
+        min-height: auto;
     }
 
     .div-button_bottom{
@@ -394,22 +383,22 @@
     }
 
     .about-div_right{
-        max-width: 290px;
         gap: 32px;
+        min-height: auto;
     }
 
     .div-top_right{
         flex-direction: column;
         outline-color: transparent;
-        width: 290px;
         min-height: 140px;
         padding: 0;
         gap: 0;
+        align-items: flex-start;
     }
 
     .div-img_right{
-        width: 64px;
-        height: 49px;
+        max-width: 64px;
+        max-height: 49px;
         margin-bottom: 12px;
         margin-right: auto;
 
@@ -421,14 +410,12 @@
         line-height: 22px;
         margin-bottom: 4px;
         font-weight: 500;
-        max-width: 290px;
     }
 
     .element-p{
         text-align: left;
         font-size: 14px;
         line-height: 28px;
-        max-width: 290px;
     }
     
     .work-container{
@@ -436,7 +423,6 @@
     }
 
     .work-content{
-        width: 290px;
         gap: 0;
     }
 
@@ -447,7 +433,6 @@
     }
 
     .work-ul{
-        max-width: 290px;
         margin-bottom: 16px;
         gap: 0;
     }
@@ -459,12 +444,7 @@
     }
 
     .content-div__right{
-        max-width: 290px;
         height: 160px;
-    }
-
-    .work-container{
-        width: 290px;
     }
 
     .work-div{
@@ -478,14 +458,9 @@
         margin-bottom: 8px;
     }
 
-    .work-paragraphs{
-        max-width: 290px;
-    }
-
     .work-p{
         font-size: 14px;
         line-height: 28px;
-        max-width: 290px;
         margin-right: 0;
     }
 
