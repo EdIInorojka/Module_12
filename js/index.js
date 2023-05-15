@@ -23,6 +23,33 @@ menulinks.forEach(
     }
 )
 
+let searchBtn = document.querySelector('.left-button');
+
+let rightBtn = document.querySelector('.right-button');
+
+let textarea = document.querySelector('.header-textarea');
+
+let searchDiv = document.querySelector('.header-div_search');
+
+console.log(rightBtn);
+
+searchBtn.addEventListener('click',
+function(){
+    rightBtn.classList.add('active');
+
+    textarea.classList.add('active');
+
+    searchDiv.classList.add('header-div_search--active');
+});
+
+rightBtn.addEventListener('click',
+function(){
+    rightBtn.classList.remove('active');
+
+    textarea.classList.remove('active');
+
+    searchDiv.classList.remove('header-div_search--active');
+});
 
 let ulBtn = document.querySelectorAll('.ul-button');
 

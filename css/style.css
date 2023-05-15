@@ -148,7 +148,7 @@ body {
     outline: 2px solid transparent;
 }
 
-.header-button svg rect, svg path{
+.header-button svg rect, svg path, svg circle{
     transition: fill .3s, stroke .3s;
 }
 
@@ -157,6 +157,10 @@ body {
 }
 
 .header-button:hover svg path{
+    stroke: var(--hover-focus_color);
+}
+
+.header-button:hover svg circle{
     stroke: var(--hover-focus_color);
 }
 
@@ -209,6 +213,36 @@ body {
     transition: color .3s, border-bottom-color .3s;
 }
 
+.header-div_search{
+    height: 60px;
+    padding-left: 16px;
+    z-index: 1000;
+    align-items: center;
+    display: flex;
+    border-radius: 16px;
+}
+
+.header-textarea{
+    border: none;
+    height: 28px;
+    border-bottom: 2px solid #DCDCDC;
+    resize: none;
+    display: none;
+}
+
+.right-button{
+    display: none;
+}
+
+.active{
+    display: block;
+    transition: display .3s;
+}
+
+.header-div_search--active{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+    transition: box-shadow .3s;
+}
 /* <----------Main----------> */
 
 .projects{
