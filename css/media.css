@@ -147,6 +147,64 @@
         height: 69px;
     }
 
+    .header-nav{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 60px;
+        width: 40%;
+        min-width: 200px;
+        height: 76vh;
+        z-index: 1000;
+        padding: 50px;
+        box-shadow: 0 0 25px #888;
+        background-color: #fff;
+        overflow-y: auto;
+        visibility: hidden;
+        transform: translateX(-120%);
+        transition: visibility .3s ease-in-out, transform .3s ease-in-out;
+    }
+
+    .header-nav .nav-ul{
+        flex-direction: column;
+    }
+
+    .header-nav .header-li:not(:last-child){
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .header-nav .header-a{
+        font-size: 18px;
+    }
+
+    .header-nav--active{
+        visibility: visible;
+        transform: none;
+    }
+
+    .stop-scroll{
+        overflow: hidden;
+    }
+
+    .burger--active
+    .burger__line{
+        color: #E1670E;
+        transition: width .3s ease-in-out, color .3s, left .3s;
+    }
+
+    .burger--active
+    .burger__line:nth-child(2){
+        width: 25px;
+        left: 56%;
+    }
+
+    .burger--active
+    .burger__line:nth-child(3){
+        width: 18px;
+        left: 69%;
+    }
+
     .projects{
         margin-bottom: 23px;
     }
@@ -161,6 +219,7 @@
 
     .header-div{
         padding-top: 10px;
+        position: relative;
     }
 
     .header-logo{
@@ -255,10 +314,14 @@
         width: 100%;
     }
 
-    .questions-p{
-        font-size: 20px;
+    .questions-h3{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
         line-height: 32px;
         max-width: 570px;
+        margin-bottom: 30px;
     }
 
     .footer-ul{

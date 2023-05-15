@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="icon" href="img/Frame 290.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="libs/accordion.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -24,19 +25,19 @@
                 <nav class="header-nav">
                     <ul class="nav-ul">
                         <li class="header-li">
-                            <a href="#" class="header-a">О нас</a>
+                            <a href="#about_us" class="header-a">О нас</a>
                         </li>
                         <li class="header-li">
                             <a href="#" class="header-a">Проекты</a>
                         </li>
                         <li class="header-li">
-                            <a href="#" class="header-a">Этапы</a>
+                            <a href="#work" class="header-a">Этапы</a>
                         </li>
                         <li class="header-li">
                             <a href="#" class="header-a">Отзывы</a>
                         </li>
                         <li class="header-li">
-                            <a href="#" class="header-a">Контакты</a>
+                            <a href="#footer" class="header-a">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -52,7 +53,10 @@
     <main class="main">
         <section class="projects">
             <div class="container">
-                <div class="projects-div">
+                <div class="projects-div slider">
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
                     <h2 class="projects-h2">
                         Проектные решения любой сложности
                     </h2>
@@ -67,7 +71,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about_us">
             <div class="container">
                 <div>
                     <h2 class="about-h2">О нас</h2>
@@ -113,7 +117,7 @@
                 </div>
             </div>
         </section>
-        <section class="work">
+        <section class="work" id="work">
             <div class="container">
                 <div class="work-content">
                     <div>
@@ -121,26 +125,24 @@
                             Как мы работаем
                         </h2>
                         <ul class="work-ul">
-                            <li class="work-li"><button type="">1 шаг</button></li>
-                            <li class="work-li"><button type="">2 шаг</button></li>
-                            <li class="work-li"><button type="">3 шаг</button></li>
-                            <li class="work-li"><button type="">4 шаг</button></li>
+                            <li class="work-li"><button class="ul-button ul-button--active" data-path="one">1 шаг</button></li>
+                            <li class="work-li"><button class="ul-button" data-path="two">2 шаг</button></li>
+                            <li class="work-li"><button class="ul-button" data-path="three">3 шаг</button></li>
+                            <li class="work-li"><button class="ul-button" data-path="four">4 шаг</button></li>
                         </ul>
                     </div>
-                    <div class="work-container">
+                    <div class="work-container work-container--active" data-target="one">
                         <div class="content-div">
                             <div class="work-div">
                                 <h3 class="work-h3">
                                     Проводим консультацию
                                 </h3>
-                                <div class="work-paragraphs">
-                                    <p class="work-p">
-                                        Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.
-                                    </p>
-                                    <p class="work-p">
-                                        Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.
-                                    </p>
-                                </div>
+                                <p class="work-p">
+                                    Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.
+                                </p>
+                                <p class="work-p">
+                                    Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.
+                                </p>
                             </div>
                             <div class="work-div__buttons">
                                 <div class="work-button__1">
@@ -155,57 +157,164 @@
                             <img class="work-img" src="img/Rectangle 18.jpg" alt="Картинка консультации">
                         </div>
                     </div>
+                    <div class="work-container" data-target="two">
+                        <div class="content-div">
+                            <div class="work-div">
+                                <h3 class="work-h3">
+                                    Составляем смету
+                                </h3>
+                                <p class="work-p">
+                                    Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.                                
+                                </p>
+                            </div>
+                            <div class="work-div__buttons">
+                                <div class="work-button__1">
+                                    <a href="#">Подробнее</a>
+                                </div>
+                                <div class="work-button__2">
+                                    <a href="#">Договор</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-div__right">
+                            <img class="work-img" src="img/Rectangle 18_2.jpg" alt="Картинка консультации">
+                        </div>
+                    </div>
+                    <div class="work-container" data-target="three">
+                        <div class="content-div">
+                            <div class="work-div">
+                                <h3 class="work-h3">
+                                    Привлекаем подрядчиков
+                                </h3>
+                                <p class="work-p">
+                                    Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по разработке прогресса профессионального сообщества.                                
+                                </p>
+                            </div>
+                            <div class="work-div__buttons">
+                                <div class="work-button__1">
+                                    <a href="#">Подробнее</a>
+                                </div>
+                                <div class="work-button__2">
+                                    <a href="#">Договор</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-div__right">
+                            <img class="work-img" src="img/Rectangle 19.jpg" alt="Картинка консультации">
+                        </div>
+                    </div>
+                    <div class="work-container" data-target="four">
+                        <div class="content-div">
+                            <div class="work-div">
+                                <h3 class="work-h3">
+                                    Инспектируем все этапы работ
+                                </h3>
+                                <p class="work-p">
+                                    Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.                                
+                                </p>
+                            </div>
+                            <div class="work-div__buttons">
+                                <div class="work-button__1">
+                                    <a href="#">Подробнее</a>
+                                </div>
+                                <div class="work-button__2">
+                                    <a href="#">Договор</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-div__right">
+                            <img class="work-img" src="img/Rectangle 20.jpg" alt="Картинка консультации">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="questions">
             <div class="container questions-div">
                 <h2 class="questions-h2">Часто задаваемые вопросы</h2>
-                <ul class="question-ul">
-                    <li class="question-li">
-                        <p class="questions-p">
-                            Из чего формируется конечная стоимость проекта?</p>
-                        <button class="questions-button">
+                <ul class="question-ul accordion-container">
+                    <li class="question-li ac">
+                        <div class="questions-div">
+                            <h3 class="questions-h3 ac-header">
+                                Из чего формируется конечная стоимость проекта?
+                            </h3>
+                            <div class="ac-panel" data-content="first">
+                                <p class="questions-p ac-text">
+                                    Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.
+                                </p>
+                                <p class="questions-p ac-text">
+                                    Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. 
+                                </p>
+                            </div>
+                        </div>
+                        <button class="questions-button ac-trigger" data-trigger="first">
                             <svg width="31" height="31" viewbox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0571 15.0571L15.0571 -1.31634e-06L15.9429 -1.31634e-06L15.9429 15.0571L23.8835 15.0571L31 15.0571L31 15.9429L15.9429 15.9429L15.9429 31L15.0571 31L15.0571 15.9429L2.42093e-06 15.9429L2.49836e-06 15.0571L15.0571 15.0571Z" fill="#666666"/>
                                 </svg>                                                       
                         </button>
                     </li>
-                    <li class="question-li">
-                        <p class="questions-p">
-                            У меня есть свой проект. Сможем ли мы его доработать / реализовать?
-                        </p>
-                        <button class="questions-button">
+                    <li class="question-li ac">
+                        <div class="questions-div">
+                            <h3 class="questions-h3 ac-header">
+                                У меня есть свой проект. Сможем ли мы его доработать / реализовать?
+                            </h3>
+                            <div class="ac-panel" data-content="second">
+                                <p class="questions-p ac-text">
+                                </p>
+                            </div>
+                        </div>
+                        <button class="questions-button ac-trigger" data-trigger="second">
                             <svg width="31" height="31" viewbox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0571 15.0571L15.0571 -1.31634e-06L15.9429 -1.31634e-06L15.9429 15.0571L23.8835 15.0571L31 15.0571L31 15.9429L15.9429 15.9429L15.9429 31L15.0571 31L15.0571 15.9429L2.42093e-06 15.9429L2.49836e-06 15.0571L15.0571 15.0571Z" fill="#666666"/>
                                 </svg>
                         </button>
                     </li>
-                    <li class="question-li">
-                        <p class="questions-p">
-                            Я выбираю между разными компаниями. В чём ваше отличие?
-                        </p>
-                        <button class="questions-button">
+                    <li class="question-li ac">
+                        <div class="questions-div">
+                            <h3 class="questions-h3 ac-header">
+                                Я выбираю между разными компаниями. В чём ваше отличие?
+                            </h3>
+                            <div class="ac-panel" data-content="third">
+                                <p class="questions-p ac-text">
+    
+                                </p>
+                            </div>
+                        </div>
+                        <button class="questions-button ac-trigger" data-trigger="third">
                             <svg width="31" height="31" viewbox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0571 15.0571L15.0571 -1.31634e-06L15.9429 -1.31634e-06L15.9429 15.0571L23.8835 15.0571L31 15.0571L31 15.9429L15.9429 15.9429L15.9429 31L15.0571 31L15.0571 15.9429L2.42093e-06 15.9429L2.49836e-06 15.0571L15.0571 15.0571Z" fill="#666666"/>
                                 </svg>
                         </button>
                     </li>
-                    <li class="question-li">
-                        <p class="questions-p">
-                            Могу ли я делегировать вам работу / согласование с подрядчиком / организацией? 
-                        </p>
-                        <button class="questions-button">
+                    <li class="question-li ac">
+                        <div class="questions-div">   
+                            <h3 class="questions-h3 ac-header">
+                                Могу ли я делегировать вам работу / согласование с подрядчиком / организацией? 
+                            </h3>
+                            <div class="ac-panel" data-content="fourth">
+                                <p class="questions-p ac-text">
+    
+                                </p>
+                            </div>
+                        </div>
+                        <button class="questions-button ac-trigger" data-trigger="fourth">
                             <svg width="31" height="31" viewbox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0571 15.0571L15.0571 -1.31634e-06L15.9429 -1.31634e-06L15.9429 15.0571L23.8835 15.0571L31 15.0571L31 15.9429L15.9429 15.9429L15.9429 31L15.0571 31L15.0571 15.9429L2.42093e-06 15.9429L2.49836e-06 15.0571L15.0571 15.0571Z" fill="#666666"/>
                                 </svg>
                         </button>
                     </li>
-                    <li class="question-li">
-                        <p class="questions-p">
-                            Могу ли я вернуть деньги на каком-либо из этапов работ?
-                        </p>
-                        <button class="questions-button">
+                    <li class="question-li ac">
+                        <div class="questions-div">
+                            <h3 class="questions-h3 ac-header">
+                                Могу ли я вернуть деньги на каком-либо из этапов работ?
+                            </h3>
+                            <div class="ac-panel" data-content="fifth">
+                                <p class="questions-p ac-text">
+    
+                                </p>
+                            </div>
+                        </div>
+                        <button class="questions-button ac-trigger" data-trigger="fifth">
                             <svg width="31" height="31" viewbox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0571 15.0571L15.0571 -1.31634e-06L15.9429 -1.31634e-06L15.9429 15.0571L23.8835 15.0571L31 15.0571L31 15.9429L15.9429 15.9429L15.9429 31L15.0571 31L15.0571 15.9429L2.42093e-06 15.9429L2.49836e-06 15.0571L15.0571 15.0571Z" fill="#666666"/>
                                 </svg>
@@ -215,7 +324,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer-div">
                 <div class="footer-div__first">
@@ -326,5 +435,10 @@
             </div>
         </div>
     </footer>
+    <script src="libs/accordion.min.js"></script>
+    <script>
+        new Accordion('.accordion-container');
+    </script>
+    <script src="js/index.js"></script>
 </body>
 </html>
