@@ -8,9 +8,23 @@
         display: none;
     }
 
+    .header-div{
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-button_menu{
+        position: absolute;
+        left: 15px;
+    }
+
+    .header-div_search{
+        right: 15px;
+    }
+
     .burger{
         display: block;
-        position: relative;
         width: 30px;
         height: 23px;
         color: #333333;
@@ -145,6 +159,20 @@
 
     .header{
         height: 69px;
+    }
+
+    .header-div{
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-div_search{
+        right: 15px;
+    }
+
+    .header-logo{
+        margin: auto;
     }
 
     .header-nav{
@@ -343,6 +371,11 @@
     .container{
         padding: 0 15px;
         margin: auto;
+    }
+
+    .header-div_search{
+        right: 0;
+        padding-right: 0;
     }
 
     .projects{

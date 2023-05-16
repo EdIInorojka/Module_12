@@ -27,15 +27,17 @@ let searchBtn = document.querySelector('.left-button');
 
 let rightBtn = document.querySelector('.right-button');
 
+let leftBtn = document.querySelector('.left-button');
+
 let textarea = document.querySelector('.header-textarea');
 
 let searchDiv = document.querySelector('.header-div_search');
 
-console.log(rightBtn);
-
 searchBtn.addEventListener('click',
 function(){
     rightBtn.classList.add('active');
+
+    leftBtn.classList.add('left-button--active');
 
     textarea.classList.add('active');
 
@@ -45,6 +47,8 @@ function(){
 rightBtn.addEventListener('click',
 function(){
     rightBtn.classList.remove('active');
+
+    leftBtn.classList.remove('left-button--active');
 
     textarea.classList.remove('active');
 
@@ -65,6 +69,25 @@ ulBtn.forEach(function(element){
 
         content.forEach(function(element){element.classList.remove('work-container--active')});
         document.querySelector(`[data-target="${path}"]`).classList.add('work-container--active');
+    });
+});
+
+let questionBtn = document.querySelectorAll('.questions-button');
+
+let right = false;
+
+questionBtn.forEach(function(element){
+    element.addEventListener('click', function(e){
+        const path = e.currentTarget.path;
+        
+        right = !right;
+
+        if (right) {
+            e.currentTarget.classList.add('questions-button--active');
+        }
+        else{
+            e.currentTarget.classList.remove('questions-button--active');
+        };
     });
 });
 

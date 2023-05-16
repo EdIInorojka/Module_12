@@ -111,6 +111,10 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.header-container{
+    position: relative;
+}
+
 .header-div{
     display: flex;
     align-items: center;
@@ -126,6 +130,8 @@ body {
 
 .burger{
     display: none;
+    position: absolute;
+    left: 50px;
 }
 
 .header-nav{
@@ -214,33 +220,56 @@ body {
 }
 
 .header-div_search{
+    position: absolute;
+    top: calc(50%-30px);
+    right: 50px;
     height: 60px;
     padding-left: 16px;
     z-index: 1000;
     align-items: center;
     display: flex;
     border-radius: 16px;
+    background-color: transparent;
+    margin-right: 14px;
+    width: 30%;
 }
 
 .header-textarea{
+    position: relative;
     border: none;
     height: 28px;
     border-bottom: 2px solid #DCDCDC;
     resize: none;
     display: none;
+    width: 80%;
+    visibility: hidden;
 }
 
 .right-button{
     display: none;
+    position: absolute;
+    right: 10px;
+}
+
+.left-button{
+    position: absolute;
+    right: 0;
 }
 
 .active{
     display: block;
+    visibility: visible;
     transition: display .3s;
+}
+
+.left-button--active{
+    right: 50px;
 }
 
 .header-div_search--active{
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+    background-color: #fff;
+    visibility: visible;
     transition: box-shadow .3s;
 }
 /* <----------Main----------> */
@@ -775,6 +804,7 @@ body {
 
 .question-li{
     display: flex;
+    border-top: 1px solid #CACACA;
     border-bottom: 1px solid #CACACA;
     z-index: -1;
     align-items: center;
@@ -864,6 +894,11 @@ body {
     border: none;
     border-radius: 25px;
     margin-left: auto;
+}
+
+.questions-button--active svg{
+    transform: rotate(45deg);
+    transition: transform .5s;
 }
 
 .questions-button svg{
