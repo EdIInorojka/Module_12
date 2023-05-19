@@ -74,20 +74,15 @@ ulBtn.forEach(function(element){
 
 let questionBtn = document.querySelectorAll('.questions-button');
 
-let right = false;
+right = false;
 
 questionBtn.forEach(function(element){
     element.addEventListener('click', function(e){
-        const path = e.currentTarget.path;
-        
-        right = !right;
+        const path = e.currentTarget.dataset.path;
+        console.log(path);
 
-        if (right) {
-            e.currentTarget.classList.add('questions-button--active');
-        }
-        else{
-            e.currentTarget.classList.remove('questions-button--active');
-        };
+        questionBtn.forEach(function(btn){btn.classList.remove('questions-button--active')});
+    
+        e.currentTarget.classList.add('questions-button--active');
     });
 });
-

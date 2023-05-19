@@ -117,6 +117,7 @@ body {
 
 .header-div{
     display: flex;
+    position: relative;
     align-items: center;
     width: 100%;
     padding: 13px;
@@ -222,7 +223,7 @@ body {
 .header-div_search{
     position: absolute;
     top: calc(50%-30px);
-    right: 50px;
+    right: 0;
     height: 60px;
     padding-left: 16px;
     z-index: 1000;
