@@ -359,54 +359,36 @@ body {
     color: #FFFFFF;
 }
 
-.slider {
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    position: relative;
-   }
-    
-   .slider .slide {
-    z-index: -1;
+.swiper{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: cover;
+    z-index: -1;
+}
+
+.swiper-slide{
+    background-repeat: no-repeat;
     background-position: center;
-    animation: slider 15s infinite;
-   }
-    
-   .slider .slide:nth-child(1) {
-      background-image: url('../img/low-angle-photo-of-balconies-2462015\ 1.jpg');
-      animation-delay: 0s;
-   }
-   
-   .slider .slide:nth-child(2) {
-      background-image: url('../img/pic_1.jpg');
-      animation-delay: -5s;
-   }
-   
-   .slider .slide:nth-child(3) {
-      background-image: url('../img/pic_2.jpg');
-      animation-delay: -10s;
-   }
-   
-   @keyframes slider {
-    0%, 26%, 100% {
-        transform: translateX(0);
-        animation-timing-function: ease;
-      }
-      33% {
-        transform: translateX(-100%);
-        animation-timing-function: step-end;
-      }
-      93% {
-        transform: translateX(100%);
-        animation-timing-function: ease;
-      }
-   }
+    background-size: cover;
+}
+
+.swiper-slide:nth-child(1){
+    background-image: url("../img/low-angle-photo-of-balconies-2462015\ 1.jpg");
+}
+
+.swiper-slide:nth-child(2){
+    background-image: url("../img/pic_1.jpg");
+}
+
+.swiper-slide:nth-child(3){
+    background-image: url("../img/pic_2.jpg");
+}
+
+.projects-text{
+    z-index: 1000;
+}
 
 .about{
     margin-bottom: 100px;
@@ -810,7 +792,7 @@ body {
     z-index: -1;
     align-items: center;
     transition: border-color .3s;
-    padding: 40px 0;
+    padding: 30px 0;
 }
 
 .question-h3{
@@ -823,7 +805,6 @@ body {
 
 .questions-div{
     display: flex;
-    gap: 30px;
 }
 
 .question-li button{

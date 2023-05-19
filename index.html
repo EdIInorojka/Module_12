@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalizecss.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="icon" href="img/Frame 290.jpg" type="image/x-icon">
@@ -63,20 +67,27 @@
     <main class="main">
         <section class="projects">
             <div class="container">
-                <div class="projects-div slider">
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <h2 class="projects-h2">
-                        Проектные решения любой сложности
-                    </h2>
-                    <p class="projects-p">
-                        Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
-                    </p>
-                    <div class="projects-button">
-                        <a href="#" class="projects-a">
-                            Заказать расчёт
-                        </a>
+                <div class="projects-div">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                          </div>
+                          <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="projects-text">
+                        <h2 class="projects-h2">
+                            Проектные решения любой сложности
+                        </h2>
+                        <p class="projects-p">
+                            Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
+                        </p>
+                        <div class="projects-button">
+                            <a href="#" class="projects-a">
+                                Заказать расчёт
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -450,5 +461,18 @@
         new Accordion('.accordion-container');
     </script>
     <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+      
+        const swiper = new Swiper('.swiper', {
+            direction: 'vertical',
+            loop: true,
+  
+            pagination: {
+            el: '.swiper-pagination',
+            },
+        });
+      </script>
 </body>
 </html>
