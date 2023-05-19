@@ -86,12 +86,3 @@ questionBtn.forEach(function(element){
         e.currentTarget.classList.add('questions-button--active');
     });
 });
-
-const swiper = new Swiper('.swiper', {
-    direction: 'vertical',
-    loop: true,
-  
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  });
