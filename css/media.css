@@ -130,7 +130,8 @@
     .projects-h2{
         font-size: 60px;
         line-height: 73px;
-        margin-bottom: 16px; 
+        margin-bottom: 16px;
+        z-index: 1;
     }
 
     .projects-p{

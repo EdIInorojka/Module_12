@@ -74,22 +74,23 @@ ulBtn.forEach(function(element){
 
 let questionBtn = document.querySelectorAll('.questions-button');
 
-right = false;
+right = false;  
 
 questionBtn.forEach(function(element){
     element.addEventListener('click', function(e){
         const path = e.currentTarget.dataset.path;
-        console.log(path);
 
         questionBtn.forEach(function(btn){btn.classList.remove('questions-button--active')});
-    
+        
+        console.log(e.currentTarget.classList);
+
         e.currentTarget.classList.add('questions-button--active');
     });
 });
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
-    direction: 'vertical',
+    direction: 'horizontal',
     loop: true,
   
     // If we need pagination

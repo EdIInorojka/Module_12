@@ -304,6 +304,7 @@ body {
     margin-bottom: 24px;
     max-width: 837px;
     min-height: 170px;
+    position: relative;
 }
 
 .projects-p{
@@ -316,6 +317,7 @@ body {
     max-width: 790px;
     margin-bottom: 90px;
     min-height: 58px;
+    position: relative;
 }
 
 .projects-button{
@@ -365,7 +367,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 0;
 }
 
 .swiper-slide{
@@ -387,6 +389,7 @@ body {
 }
 
 .projects-text{
+    width: 100%;
     z-index: 1000;
 }
 
