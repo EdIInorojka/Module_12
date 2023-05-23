@@ -120,7 +120,7 @@ body {
     position: relative;
     align-items: center;
     width: 100%;
-    padding: 13px;
+    padding: 13px 0;
 }
 
 .header-button_menu{
@@ -144,7 +144,7 @@ body {
     padding-left: 0;
     list-style-type: none;
     display: flex;
-    gap: 83px;
+    gap: 60px;
 }
 
 .header-button{
@@ -153,6 +153,7 @@ body {
     border: none;
     margin: 0;
     outline: 2px solid transparent;
+    padding: 0;
 }
 
 .header-button svg rect, svg path, svg circle{
@@ -328,6 +329,7 @@ body {
     border: none;
     position: relative;
     transition: background-color .3s;
+    pointer-events: auto;
 }
 
 .projects-button a::before{
@@ -391,6 +393,7 @@ body {
 .projects-text{
     width: 100%;
     z-index: 1000;
+    pointer-events: none;
 }
 
 .about{

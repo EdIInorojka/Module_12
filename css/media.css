@@ -21,14 +21,13 @@
     .header-nav{
         display: block;
         position: absolute;
-        left: 0;
+        left: -50px;
         top: 100px;
-        width: 40%;
+        width: 30%;
         min-width: 200px;
-        height: 80vh;
+        height: 100vh;
         z-index: 1000;
         padding: 50px;
-        box-shadow: 0 0 25px #888;
         background-color: #fff;
         overflow-y: auto;
         visibility: hidden;
@@ -79,7 +78,8 @@
 
     .header-button_menu{
         position: absolute;
-        left: 15px;
+        left: 0;
+        z-index: 10000;
     }
 
     .header-div_search{
@@ -235,10 +235,11 @@
 
     .header-nav{
         top: 69px;
+        width: 40%
     }
 
     .header-div_search{
-        right: 15px;
+        right: 0;
     }
 
     .header-logo{
@@ -388,7 +389,11 @@
     .header-div_search{
         right: 0;
         padding-right: 0;
-        width: 70%;
+        width: 90%;
+    }
+
+    .header-nav{
+        width: 50%;
     }
 
     .projects{

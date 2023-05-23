@@ -82,8 +82,6 @@ questionBtn.forEach(function(element){
 
         questionBtn.forEach(function(btn){btn.classList.remove('questions-button--active')});
         
-        console.log(e.currentTarget.classList);
-
         e.currentTarget.classList.add('questions-button--active');
     });
 });
