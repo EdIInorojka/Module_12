@@ -1,5 +1,15 @@
 @media(max-width: 1324px){
 
+    .header{
+        margin-bottom: 40px;
+        border-radius: 0px 0px 32px 32px;
+        box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .projects{
+        border-radius: 32px;
+    }
+
     .header-div{
         justify-content: space-between;
     }
@@ -58,22 +68,31 @@
         overflow: hidden;
     }
 
+    .burger__line{
+        left: 0;
+    }
+
     .burger--active
     .burger__line{
-        color: #E1670E;
-        transition: width .3s ease-in-out, color .3s, left .3s;
+        color: #333333;
+        transition: color .3s, transform .3s ease-in-out;
+    }
+
+    .burger--active
+    .burger__line:nth-child(1){
+        transform: rotate(45deg);
+        top: calc(50% - 1.5px);
     }
 
     .burger--active
     .burger__line:nth-child(2){
-        width: 25px;
-        left: 56%;
+        display: none;
     }
 
     .burger--active
     .burger__line:nth-child(3){
-        width: 18px;
-        left: 69%;
+        transform: rotate(-45deg);
+        top: calc(50% - 1.5px);
     }
 
     .header-button_menu{
@@ -117,6 +136,10 @@
         bottom: 0;
     }
 
+    .swiper{
+        border-radius: 32px;
+    }
+
     .projects{
         margin-bottom: 80px;
     }
@@ -140,6 +163,10 @@
         margin-bottom: 60px;
     }
 
+    .projects-button{
+        border-radius: 32px;
+    }
+
     .about{
         margin-bottom: 80px;
     }
@@ -155,13 +182,22 @@
     .about-div_left{
         width: 100%;
         min-height: 640px;
+        border-radius: 32px;
     }
 
     .div-top_right{
         width: 100%;
         min-height: 295px;
         padding-left: 77px;
+        border-radius: 32px;
+    }
 
+    .div-div_bottom{
+        border-radius: 32px;
+    }
+
+    .div-button_bottom{
+        border-radius: 16px;
     }
 
     .work{
@@ -187,6 +223,18 @@
 
     .work-img{
         width: 100%;
+    }
+
+    .work-button__1{
+        border-radius: 16px;
+    }
+
+    .work-button__2{
+        border-radius: 16px;
+    }
+
+    .work-img{
+        border-radius: 32px;
     }
 
     .questions-p{
@@ -225,6 +273,7 @@
 
     .header{
         height: 69px;
+        border-radius: 0px 0px 24px 24px;
     }
 
     .header-div{
@@ -246,6 +295,21 @@
         margin: auto;
     }
 
+    .swiper{
+        border-radius: 24px;
+    }
+
+    .about-div_left{
+        border-radius: 24px;
+    }
+
+    .div-top_right{
+        border-radius: 24px;
+    }
+
+    .work-img{
+        border-radius: 24px;
+    }
 
     .projects{
         margin-bottom: 23px;
@@ -386,10 +450,23 @@
         margin: auto;
     }
 
+    .header{
+        border-radius: 0px 0px 16px 16px;
+    }
+
+    .swiper{
+        border-radius: 16px;
+    }
+
+    .about-img__left{
+        border-radius: 16px;
+    }
+
     .header-div_search{
         right: 0;
         padding-right: 0;
         width: 90%;
+        border-radius: 0px 0px 24px 24px;
     }
 
     .header-nav{
