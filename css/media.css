@@ -462,6 +462,22 @@
         border-radius: 16px;
     }
 
+    .div-button_bottom{
+        border-radius: 8px;
+    }
+
+    .work-img{
+        border-radius: 16px;
+    }
+
+    .work-button__1{
+        border-radius: 8px;
+    }
+
+    .work-button__2{
+        border-radius: 8px;
+    }
+
     .header-div_search{
         right: 0;
         padding-right: 0;
