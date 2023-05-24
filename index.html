@@ -18,7 +18,7 @@
     <header class="header">
         <div class="container">
             <div class="header-div">
-                <button class="header-button_menu burger">
+                <button aria-label="Меню" class="header-button_menu burger">
                     <span class="burger__line"></span>
                     <span class="burger__line"></span>
                     <span class="burger__line"></span>
@@ -47,13 +47,13 @@
                 </nav>      
                 <div class="header-div_search">
                     <textarea class="header-textarea" placeholder="Что будем искать?"></textarea>
-                    <button class="header-button left-button">
+                    <button aria-label="Поиск" class="header-button left-button">
                         <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#333333"/>
                             <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="#333333" stroke-width="2"/>
                             </svg>         
                     </button>
-                    <button class="header-button right-button">
+                    <button aria-label="Закрыть" class="header-button right-button">
                         <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="8.95386" y="7.30435" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30435)" fill="#999999"/>
                             <rect x="7.30432" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30432 15.5524)" fill="#999999"/>
@@ -83,7 +83,7 @@
                         <p class="projects-p">
                             Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
                         </p>
-                        <div class="projects-button">
+                        <div aria-label="Заказать расчёт" class="projects-button">
                             <a href="#" class="projects-a">
                                 Заказать расчёт
                             </a>
@@ -107,7 +107,7 @@
                                 <p class="div-p_bottom">
                                     Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.
                                 </p>
-                                <div class="div-button_bottom">
+                                <div aria-label="Подробнее" class="div-button_bottom">
                                     <a href="#">Подробнее</a>
                                 </div>
                             </div>
@@ -146,10 +146,10 @@
                             Как мы работаем
                         </h2>
                         <ul class="work-ul">
-                            <li class="work-li"><button class="ul-button ul-button--active" data-path="one">1 шаг</button></li>
-                            <li class="work-li"><button class="ul-button" data-path="two">2 шаг</button></li>
-                            <li class="work-li"><button class="ul-button" data-path="three">3 шаг</button></li>
-                            <li class="work-li"><button class="ul-button" data-path="four">4 шаг</button></li>
+                            <li class="work-li"><button aria-label="1 шаг" class="ul-button ul-button--active" data-path="one">1 шаг</button></li>
+                            <li class="work-li"><button aria-label="2 шаг" class="ul-button" data-path="two">2 шаг</button></li>
+                            <li class="work-li"><button aria-label="3 шаг" class="ul-button" data-path="three">3 шаг</button></li>
+                            <li class="work-li"><button aria-label="4 шаг" class="ul-button" data-path="four">4 шаг</button></li>
                         </ul>
                     </div>
                     <div class="work-container work-container--active" data-target="one">
@@ -268,7 +268,7 @@
                                 </p>
                             </div>
                         </div>
-                        <button class="questions-button ac-trigger" data-path="first">
+                        <button aria-label="Развернуть вопрос 1" class="questions-button ac-trigger" data-path="first">
                             <svg width="31" height="31" viewbox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0571 15.0571L15.0571 -1.31634e-06L15.9429 -1.31634e-06L15.9429 15.0571L23.8835 15.0571L31 15.0571L31 15.9429L15.9429 15.9429L15.9429 31L15.0571 31L15.0571 15.9429L2.42093e-06 15.9429L2.49836e-06 15.0571L15.0571 15.0571Z" fill="#666666"/>
                                 </svg>                                                       
@@ -284,7 +284,7 @@
                                 </p>
                             </div>
                         </div>
-                        <button class="questions-button ac-trigger" data-path="second">
+                        <button aria-label="Развернуть вопрос 2" class="questions-button ac-trigger" data-path="second">
                             <svg width="31" height="31" viewbox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0571 15.0571L15.0571 -1.31634e-06L15.9429 -1.31634e-06L15.9429 15.0571L23.8835 15.0571L31 15.0571L31 15.9429L15.9429 15.9429L15.9429 31L15.0571 31L15.0571 15.9429L2.42093e-06 15.9429L2.49836e-06 15.0571L15.0571 15.0571Z" fill="#666666"/>
                                 </svg>
@@ -301,7 +301,7 @@
                                 </p>
                             </div>
                         </div>
-                        <button class="questions-button ac-trigger" data-path="third">
+                        <button aria-label="Развернуть вопрос 3" class="questions-button ac-trigger" data-path="third">
                             <svg width="31" height="31" viewbox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0571 15.0571L15.0571 -1.31634e-06L15.9429 -1.31634e-06L15.9429 15.0571L23.8835 15.0571L31 15.0571L31 15.9429L15.9429 15.9429L15.9429 31L15.0571 31L15.0571 15.9429L2.42093e-06 15.9429L2.49836e-06 15.0571L15.0571 15.0571Z" fill="#666666"/>
                                 </svg>
@@ -318,7 +318,7 @@
                                 </p>
                             </div>
                         </div>
-                        <button class="questions-button ac-trigger" data-path="fourth">
+                        <button aria-label="Развернуть вопрос 4" class="questions-button ac-trigger" data-path="fourth">
                             <svg width="31" height="31" viewbox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0571 15.0571L15.0571 -1.31634e-06L15.9429 -1.31634e-06L15.9429 15.0571L23.8835 15.0571L31 15.0571L31 15.9429L15.9429 15.9429L15.9429 31L15.0571 31L15.0571 15.9429L2.42093e-06 15.9429L2.49836e-06 15.0571L15.0571 15.0571Z" fill="#666666"/>
                                 </svg>
@@ -335,7 +335,7 @@
                                 </p>
                             </div>
                         </div>
-                        <button class="questions-button ac-trigger" data-path="fifth">
+                        <button aria-label="Развернуть вопрос 5" class="questions-button ac-trigger" data-path="fifth">
                             <svg width="31" height="31" viewbox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0571 15.0571L15.0571 -1.31634e-06L15.9429 -1.31634e-06L15.9429 15.0571L23.8835 15.0571L31 15.0571L31 15.9429L15.9429 15.9429L15.9429 31L15.0571 31L15.0571 15.9429L2.42093e-06 15.9429L2.49836e-06 15.0571L15.0571 15.0571Z" fill="#666666"/>
                                 </svg>
@@ -435,11 +435,11 @@
                         <input type="email" required placeholder="E-mail*" class="footer-input placeholder"> 
                         <textarea required placeholder="Сообщение" class="footer-input placeholder"></textarea>
                         <div class="footer-form__div">
-                            <button type="submit" class="footer-button">
+                            <button aria-label="Отправить данные" type="submit" class="footer-button">
                                 Отправить данные
                             </button>
                             <div class="footer-input__radio">
-                                <input type="checkbox" id="check" required class="custom-checkbox">
+                                <input aria-checked="true" type="checkbox" required checked="true" id="check"  class="custom-checkbox">
                                 <label for="check" class="footer-label"></label>
                                 <p class="footer-input__text">
                                     Согласен на обработку данных

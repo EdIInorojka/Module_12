@@ -165,6 +165,13 @@
 
     .projects-button{
         border-radius: 32px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 23.4581px;
+        line-height: 29px;
+        text-align: center;
+        color: #FFFFFF;
     }
 
     .about{
@@ -263,6 +270,10 @@
 
     .footer-button{
         max-width: 240px;
+    }
+
+    .footer-input{
+        border-radius: 16px;
     }
 }
 
@@ -481,7 +492,7 @@
     .header-div_search{
         right: 0;
         padding-right: 0;
-        width: 90%;
+        width: 100%;
         border-radius: 0px 0px 24px 24px;
     }
 
